@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --color-hero-bg: #063D35;
+  --color-hero-dark: #042E28;
+  --color-hero-light: #0B4A41;
+  --color-accent: #00BFA6;
+  --color-accent-hover: #00A892;
+  --color-accent-light: rgba(0, 191, 166, 0.12);
+  --color-text-main: #111827;
+  --color-text-muted: #6B7280;
+  --color-bg-light: #F7FAF9;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: var(--color-text-main);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #00BFA6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00A892;
+}
+
+/* Rounded shape for hero image cutout */
+.hero-image-clip {
+  border-radius: 140px 140px 40px 40px;
+}
+
+/* Smooth Transitions */
+.transition-custom {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Button pulse animation for CTAs */
+@keyframes pulse-teal {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(0, 191, 166, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(0, 191, 166, 0);
+  }
+}
+
+.glow-teal {
+  animation: pulse-teal 3s infinite;
+}
