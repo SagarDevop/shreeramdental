@@ -35,31 +35,31 @@ export default function Contact() {
             {/* Contact Details Column */}
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-4">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#00BFA6]">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#4AB0F0]">
                   VISIT OUR CLINIC
                 </span>
-                <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">
+                <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">
                   Shree Ram Dental Clinic
                 </h2>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   Located in Krishna Colony near Kamani Chowk, Yamunanagar, Haryana. Easily accessible with local transport and parking nearby.
                 </p>
               </div>
 
               {/* Contact Info Cards */}
               <div className="space-y-4">
-                <div className="p-5 rounded-2xl bg-[#F7FAF9] border border-gray-100 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#00BFA6]/10 text-[#00BFA6] flex items-center justify-center shrink-0 mt-0.5">
-                    <MapPin className="w-5 h-5 text-[#00BFA6]" />
+                <div className="p-5 rounded-2xl bg-[#F0F8FF] border border-sky-100 flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-[#4AB0F0]/15 text-[#4AB0F0] flex items-center justify-center shrink-0 mt-0.5">
+                    <MapPin className="w-5 h-5 text-[#4AB0F0]" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-sm font-bold text-gray-900">Clinic Address</h4>
-                    <p className="text-xs text-gray-600 mt-1">Krishna Colony, Near Kamani Chowk, Yamunanagar, Haryana - 135002</p>
+                    <h4 className="text-sm font-bold text-slate-900">Clinic Address</h4>
+                    <p className="text-xs text-slate-600 mt-1">Krishna Colony, Near Kamani Chowk, Yamunanagar, Haryana - 135002</p>
                     <a
                       href={googleMapsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs text-[#00BFA6] font-bold mt-2 hover:underline"
+                      className="inline-flex items-center gap-1 text-xs text-[#4AB0F0] font-bold mt-2 hover:underline cursor-pointer"
                     >
                       <span>Get Directions on Google Maps</span>
                       <ExternalLink className="w-3 h-3" />
@@ -67,26 +67,26 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-[#F7FAF9] border border-gray-100 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#00BFA6]/10 text-[#00BFA6] flex items-center justify-center shrink-0 mt-0.5">
-                    <Phone className="w-5 h-5 text-[#00BFA6]" />
+                <div className="p-5 rounded-2xl bg-[#F0F8FF] border border-sky-100 flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-[#4AB0F0]/15 text-[#4AB0F0] flex items-center justify-center shrink-0 mt-0.5">
+                    <Phone className="w-5 h-5 text-[#4AB0F0]" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-gray-900">Phone & WhatsApp</h4>
-                    <a href="tel:+919729437758" className="text-xs text-[#00BFA6] font-bold block mt-1 hover:underline">
+                    <h4 className="text-sm font-bold text-slate-900">Phone & WhatsApp</h4>
+                    <a href="tel:+919729437758" className="text-xs text-[#4AB0F0] font-bold block mt-1 hover:underline cursor-pointer">
                       +91 97294 37758
                     </a>
                   </div>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-[#F7FAF9] border border-gray-100 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#00BFA6]/10 text-[#00BFA6] flex items-center justify-center shrink-0 mt-0.5">
-                    <Clock className="w-5 h-5 text-[#00BFA6]" />
+                <div className="p-5 rounded-2xl bg-[#F0F8FF] border border-sky-100 flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-[#4AB0F0]/15 text-[#4AB0F0] flex items-center justify-center shrink-0 mt-0.5">
+                    <Clock className="w-5 h-5 text-[#4AB0F0]" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-gray-900">Working Hours</h4>
-                    <p className="text-xs text-gray-600 mt-1">Monday – Saturday: 9:00 AM – 9:00 PM</p>
-                    <p className="text-xs text-gray-600">Sunday: Closed</p>
+                    <h4 className="text-sm font-bold text-slate-900">Working Hours</h4>
+                    <p className="text-xs text-slate-600 mt-1">Monday – Saturday: 9:00 AM – 9:00 PM</p>
+                    <p className="text-xs text-slate-600">Sunday: Closed</p>
                   </div>
                 </div>
               </div>
@@ -94,99 +94,99 @@ export default function Contact() {
 
             {/* Contact Form Column */}
             <div className="lg:col-span-7">
-              <div className="p-8 sm:p-10 rounded-3xl bg-white border border-gray-100 shadow-xl space-y-6">
+              <div className="p-8 sm:p-10 rounded-3xl bg-white border border-sky-100 shadow-xl space-y-6">
                 
                 {submitted ? (
                   <div className="text-center py-12 space-y-4">
-                    <div className="w-16 h-16 rounded-full bg-[#00BFA6]/10 text-[#00BFA6] mx-auto flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-[#4AB0F0]/15 text-[#4AB0F0] mx-auto flex items-center justify-center">
                       <CheckCircle2 className="w-10 h-10" />
                     </div>
-                    <h3 className="text-2xl font-extrabold text-gray-900">Message Sent Successfully!</h3>
-                    <p className="text-sm text-gray-600 max-w-md mx-auto">
+                    <h3 className="text-2xl font-extrabold text-slate-900">Message Sent Successfully!</h3>
+                    <p className="text-sm text-slate-600 max-w-md mx-auto">
                       Thank you for reaching out to Shree Ram Dental Clinic. Our team will respond to your inquiry shortly.
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}
-                      className="bg-[#00BFA6] text-white font-semibold text-xs px-6 py-2.5 rounded-full hover:bg-[#00A892] transition-colors"
+                      className="bg-[#4AB0F0] text-white font-semibold text-xs px-6 py-2.5 rounded-full hover:bg-[#2898E0] transition-colors cursor-pointer"
                     >
                       Send Another Message
                     </button>
                   </div>
                 ) : (
                   <div>
-                    <h3 className="text-2xl font-extrabold text-gray-900 mb-2">
+                    <h3 className="text-2xl font-extrabold text-slate-900 mb-2">
                       Send Us a Message
                     </h3>
-                    <p className="text-xs text-gray-500 mb-6">
+                    <p className="text-xs text-slate-500 mb-6">
                       Fill out the form below for consultation requests or general queries.
                     </p>
 
                     <form onSubmit={handleSubmit} className="space-y-4 text-xs">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                          <label className="block font-bold text-gray-700 mb-1">Your Name</label>
+                          <label className="block font-bold text-slate-700 mb-1">Your Name</label>
                           <input
                             type="text"
                             required
                             placeholder="Enter your name"
                             value={formData.name}
                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#00BFA6] focus:outline-none text-sm text-gray-900"
+                            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#4AB0F0] focus:outline-none text-sm text-slate-900"
                           />
                         </div>
 
                         <div>
-                          <label className="block font-bold text-gray-700 mb-1">Phone Number</label>
+                          <label className="block font-bold text-slate-700 mb-1">Phone Number</label>
                           <input
                             type="tel"
                             required
                             placeholder="+91 97294 XXXXX"
                             value={formData.phone}
                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#00BFA6] focus:outline-none text-sm text-gray-900"
+                            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#4AB0F0] focus:outline-none text-sm text-slate-900"
                           />
                         </div>
                       </div>
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                          <label className="block font-bold text-gray-700 mb-1">Email Address (Optional)</label>
+                          <label className="block font-bold text-slate-700 mb-1">Email Address (Optional)</label>
                           <input
                             type="email"
                             placeholder="yourname@example.com"
                             value={formData.email}
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#00BFA6] focus:outline-none text-sm text-gray-900"
+                            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#4AB0F0] focus:outline-none text-sm text-slate-900"
                           />
                         </div>
 
                         <div>
-                          <label className="block font-bold text-gray-700 mb-1">Service Required</label>
+                          <label className="block font-bold text-slate-700 mb-1">Service Required</label>
                           <input
                             type="text"
                             placeholder="Root Canal / Crowns / Dental Checkup"
                             value={formData.subject}
                             onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                            className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#00BFA6] focus:outline-none text-sm text-gray-900"
+                            className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#4AB0F0] focus:outline-none text-sm text-slate-900"
                           />
                         </div>
                       </div>
 
                       <div>
-                        <label className="block font-bold text-gray-700 mb-1">Message</label>
+                        <label className="block font-bold text-slate-700 mb-1">Message</label>
                         <textarea
                           rows="4"
                           required
                           placeholder="Please describe your query or preferred appointment time"
                           value={formData.message}
                           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#00BFA6] focus:outline-none text-sm text-gray-900 resize-none"
+                          className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#4AB0F0] focus:outline-none text-sm text-slate-900 resize-none"
                         />
                       </div>
 
                       <button
                         type="submit"
-                        className="w-full bg-[#00BFA6] hover:bg-[#00A892] text-white font-bold text-sm py-3.5 rounded-full shadow-lg shadow-[#00BFA6]/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                        className="w-full bg-[#4AB0F0] hover:bg-[#2898E0] text-white font-bold text-sm py-3.5 rounded-full shadow-lg shadow-[#4AB0F0]/25 transition-all flex items-center justify-center gap-2 cursor-pointer"
                       >
                         <span>Send Message</span>
                         <Send className="w-4 h-4" />

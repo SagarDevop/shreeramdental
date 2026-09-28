@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --color-hero-bg: #063D35;
-  --color-hero-dark: #042E28;
-  --color-hero-light: #0B4A41;
-  --color-accent: #00BFA6;
-  --color-accent-hover: #00A892;
-  --color-accent-light: rgba(0, 191, 166, 0.12);
-  --color-text-main: #111827;
-  --color-text-muted: #6B7280;
-  --color-bg-light: #F7FAF9;
+  --color-hero-bg: #081E3D;
+  --color-hero-dark: #051429;
+  --color-hero-light: #0F3566;
+  --color-accent: #4AB0F0;
+  --color-accent-hover: #2898E0;
+  --color-accent-light: rgba(74, 176, 240, 0.12);
+  --color-text-main: #0F172A;
+  --color-text-muted: #64748B;
+  --color-bg-light: #F0F8FF;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -25,14 +25,14 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f0f8ff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #00BFA6;
+  background: #4AB0F0;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #00A892;
+  background: #2898E0;
 }
 
 /* Rounded shape for hero image cutout */
@@ -46,17 +46,17 @@ body {
 }
 
 /* Button pulse animation for CTAs */
-@keyframes pulse-teal {
+@keyframes pulse-sky {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(0, 191, 166, 0.4);
+    box-shadow: 0 0 0 0 rgba(74, 176, 240, 0.4);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(0, 191, 166, 0);
+    box-shadow: 0 0 0 10px rgba(74, 176, 240, 0);
   }
 }
 
-.glow-teal {
-  animation: pulse-teal 3s infinite;
+.glow-sky {
+  animation: pulse-sky 3s infinite;
 }
 
 /* Mobile Bottom Nav Lock to prevent detaching or scrolling up on mobile browsers */
@@ -78,4 +78,3 @@ body {
 .safe-area-pb {
   padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
 }
-

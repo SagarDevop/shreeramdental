@@ -26,7 +26,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-white text-slate-900 font-sans selection:bg-[#00BFA6] selection:text-white pb-20 md:pb-0 relative">
+      <div className="min-h-screen flex flex-col bg-white text-slate-900 font-sans selection:bg-[#4AB0F0] selection:text-white pb-20 md:pb-0 relative">
         
         {/* Navigation Header */}
         <Header onOpenBooking={() => setIsBookingOpen(true)} />

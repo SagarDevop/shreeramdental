@@ -94,8 +94,8 @@ export default function Services({ onOpenBooking }) {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-5 py-2.5 rounded-full text-xs font-semibold transition-all cursor-pointer ${
                   activeCategory === cat
-                    ? 'bg-[#00BFA6] text-white shadow-md shadow-[#00BFA6]/20'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    ? 'bg-[#4AB0F0] text-white shadow-md shadow-[#4AB0F0]/25'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                 }`}
               >
                 {cat}
@@ -107,7 +107,7 @@ export default function Services({ onOpenBooking }) {
             {filteredServices.map((service) => (
               <div
                 key={service.id}
-                className="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between group"
+                className="bg-white rounded-3xl border border-sky-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between group"
               >
                 <div>
                   <div className="h-52 overflow-hidden relative">
@@ -116,34 +116,34 @@ export default function Services({ onOpenBooking }) {
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[11px] font-bold text-[#063D35]">
+                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[11px] font-bold text-[#081E3D]">
                       {service.category}
                     </div>
                   </div>
 
                   <div className="p-6 space-y-3">
-                    <div className="flex items-center justify-between text-xs text-gray-400 font-medium">
+                    <div className="flex items-center justify-between text-xs text-slate-400 font-medium">
                       <span className="flex items-center gap-1">
-                        <Clock className="w-3.5 h-3.5 text-[#00BFA6]" />
+                        <Clock className="w-3.5 h-3.5 text-[#4AB0F0]" />
                         {service.duration}
                       </span>
-                      <span className="font-bold text-[#00BFA6] text-xs">
+                      <span className="font-bold text-[#4AB0F0] text-xs">
                         {service.price}
                       </span>
                     </div>
 
-                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#00BFA6] transition-colors">
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#4AB0F0] transition-colors">
                       {service.title}
                     </h3>
 
-                    <p className="text-xs text-gray-500 leading-relaxed">
+                    <p className="text-xs text-slate-500 leading-relaxed">
                       {service.summary}
                     </p>
 
                     <div className="space-y-1.5 pt-2">
                       {service.features.slice(0, 3).map((feat, idx) => (
-                        <div key={idx} className="flex items-center gap-2 text-xs text-gray-700">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-[#00BFA6] shrink-0" />
+                        <div key={idx} className="flex items-center gap-2 text-xs text-slate-700">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-[#4AB0F0] shrink-0" />
                           <span>{feat}</span>
                         </div>
                       ))}
@@ -154,13 +154,13 @@ export default function Services({ onOpenBooking }) {
                 <div className="p-6 pt-0 flex items-center gap-3">
                   <Link
                     to={`/services/${service.id}`}
-                    className="flex-1 py-2.5 rounded-full border border-gray-200 hover:border-[#00BFA6] text-gray-700 hover:text-[#00BFA6] text-xs font-semibold text-center transition-colors"
+                    className="flex-1 py-2.5 rounded-full border border-sky-200 hover:border-[#4AB0F0] text-slate-700 hover:text-[#4AB0F0] text-xs font-semibold text-center transition-colors"
                   >
                     View Details
                   </Link>
                   <button
                     onClick={onOpenBooking}
-                    className="py-2.5 px-4 rounded-full bg-[#00BFA6] hover:bg-[#00A892] text-white text-xs font-semibold flex items-center gap-1 shadow-sm transition-colors cursor-pointer"
+                    className="py-2.5 px-4 rounded-full bg-[#4AB0F0] hover:bg-[#2898E0] text-white text-xs font-semibold flex items-center gap-1 shadow-sm transition-colors cursor-pointer"
                   >
                     <span>Book</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />

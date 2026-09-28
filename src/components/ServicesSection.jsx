@@ -12,31 +12,32 @@ export default function ServicesSection({ onOpenBooking, onOpenVideo }) {
           <div className="lg:col-span-6 relative">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               
-              <div className="relative rounded-3xl overflow-hidden shadow-xl border border-gray-100 group">
+              <div className="relative rounded-3xl overflow-hidden shadow-xl border border-sky-100 group">
                 <img
                   src={servicesTeamImg}
                   alt="Shree Ram Dental Clinic Yamunanagar"
-                  className="w-full h-[380px] sm:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-[320px] sm:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
 
                 <button
                   onClick={onOpenVideo}
                   aria-label="Play clinic overview video"
-                  className="absolute inset-0 m-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 hover:bg-white text-[#00BFA6] shadow-2xl flex items-center justify-center transition-transform hover:scale-110 cursor-pointer border border-emerald-100"
+                  className="absolute inset-0 m-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 hover:bg-white text-[#4AB0F0] shadow-2xl flex items-center justify-center transition-transform hover:scale-110 cursor-pointer border border-sky-100"
                 >
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#00BFA6] text-white flex items-center justify-center shadow-md">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#4AB0F0] text-white flex items-center justify-center shadow-md">
                     <Play className="w-6 h-6 fill-current ml-1 text-white" />
                   </div>
                 </button>
               </div>
 
-              <div className="absolute -bottom-8 -right-4 sm:bottom-6 sm:-right-8 bg-white p-4 sm:p-5 rounded-2xl shadow-xl border border-gray-100 max-w-xs z-10 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-[#00BFA6]/10 text-[#00BFA6] flex items-center justify-center shrink-0">
+              {/* Responsive Badge (relative on mobile, absolute on desktop to avoid overlap) */}
+              <div className="mt-4 sm:mt-0 sm:absolute sm:bottom-6 sm:-right-8 bg-white p-4 sm:p-5 rounded-2xl shadow-lg border border-sky-100 max-w-xs z-10 flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-[#4AB0F0]/15 text-[#4AB0F0] flex items-center justify-center shrink-0">
                   <Award className="w-6 h-6" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-gray-900">5.0 Star Rated Clinic</div>
-                  <div className="text-xs text-gray-500 font-medium mt-0.5">Krishna Colony, Yamunanagar</div>
+                  <div className="text-sm font-bold text-slate-900">5.0 Star Rated Clinic</div>
+                  <div className="text-xs text-slate-500 font-medium mt-0.5">Krishna Colony, Yamunanagar</div>
                 </div>
               </div>
 
@@ -46,20 +47,20 @@ export default function ServicesSection({ onOpenBooking, onOpenVideo }) {
           {/* Right Column: Text Content & Features */}
           <div className="lg:col-span-6 space-y-6">
             
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#00BFA6]/10 text-[#00BFA6] text-xs font-semibold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4AB0F0]/15 text-[#4AB0F0] text-xs font-semibold uppercase tracking-wider">
               <Stethoscope className="w-3.5 h-3.5" />
               <span>Comprehensive Dental Care</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
               Comprehensive Dental Services for Every Need
             </h2>
 
-            <p className="text-gray-600 text-base leading-relaxed">
+            <p className="text-slate-600 text-base leading-relaxed">
               Shree Ram Dental Clinic in Yamunanagar is a trusted healthcare destination where healthy, confident, and radiant smiles are crafted with care and precision. Led by Dr. Asha Chopra, our clinic combines modern techniques and gentle care.
             </p>
 
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-slate-600 text-sm leading-relaxed">
               From single-sitting painless root canals and tooth extractions to Zirconia crowns, dental implants, teeth scaling, and smile designing—our team provides complete dental treatments under one roof.
             </p>
 
@@ -73,8 +74,8 @@ export default function ServicesSection({ onOpenBooking, onOpenVideo }) {
                 "Smile Designing & Kids Dental"
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#00BFA6] shrink-0" />
-                  <span className="text-sm font-medium text-gray-800">{item}</span>
+                  <CheckCircle2 className="w-4 h-4 text-[#4AB0F0] shrink-0" />
+                  <span className="text-sm font-medium text-slate-800">{item}</span>
                 </div>
               ))}
             </div>
@@ -82,7 +83,7 @@ export default function ServicesSection({ onOpenBooking, onOpenVideo }) {
             <div className="pt-4">
               <button
                 onClick={onOpenBooking}
-                className="bg-[#00BFA6] hover:bg-[#00A892] text-white font-semibold text-sm px-7 py-3 rounded-full inline-flex items-center gap-2 shadow-lg shadow-[#00BFA6]/20 transition-all duration-300 cursor-pointer"
+                className="bg-[#4AB0F0] hover:bg-[#2898E0] text-white font-semibold text-sm px-7 py-3 rounded-full inline-flex items-center gap-2 shadow-lg shadow-[#4AB0F0]/25 transition-all duration-300 cursor-pointer"
               >
                 <span>Explore All Services</span>
                 <ArrowUpRight className="w-4 h-4" />
