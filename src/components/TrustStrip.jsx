@@ -3,7 +3,7 @@ import { Star, MapPin, Award, ShieldCheck, Stethoscope } from 'lucide-react';
 
 export default function TrustStrip() {
   const trustItems = [
-    { name: '5.0★ Google Rating', icon: Star, color: 'text-amber-500', detail: 'Verified Feedback' },
+    { name: '5.0 Google Rating', icon: Star, color: 'text-amber-500', detail: 'Verified Feedback' },
     { name: '180+ Reviews', icon: ShieldCheck, color: 'text-[#4AB0F0]', detail: 'Patient Trust' },
     { name: 'Yamunanagar, HR', icon: MapPin, color: 'text-[#4AB0F0]', detail: 'Krishna Colony' },
     { name: 'Dr. Asha Chopra', icon: Award, color: 'text-[#4AB0F0]', detail: 'Lead Dental Surgeon' },

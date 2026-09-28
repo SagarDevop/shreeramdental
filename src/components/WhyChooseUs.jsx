@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, Sparkles, UserCheck, Cpu, CreditCard } from 'lucide-react';
+import { CheckCircle2, Sparkles, UserCheck, Cpu, CreditCard, Star } from 'lucide-react';
 
 export default function WhyChooseUs() {
   const features = [
@@ -45,15 +45,17 @@ export default function WhyChooseUs() {
               We create experiences that make you feel comfortable, confident, and cared for at every stage of your dental treatment in Yamunanagar.
             </p>
 
-            <div className="p-6 rounded-2xl bg-white border border-sky-100 shadow-sm space-y-3 mt-6">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#4AB0F0]/15 text-[#4AB0F0] flex items-center justify-center font-bold text-lg">
-                  5.0★
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900">Highest Rated Dental Clinic</h4>
-                  <p className="text-xs text-slate-500">180+ Verified 5-star Google Reviews</p>
-                </div>
+            {/* Redesigned 5.0 Rating Card */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-white border border-sky-100/80 shadow-md shadow-sky-900/5 flex items-center gap-4 mt-6">
+              <div className="w-13 h-13 rounded-full bg-[#E0F2FE] border border-sky-200/60 flex items-center justify-center shrink-0 shadow-sm">
+                <span className="text-[#0284C7] font-extrabold text-sm sm:text-base flex items-center gap-0.5 px-2">
+                  <span>5.0</span>
+                  <Star className="w-3.5 h-3.5 fill-[#4AB0F0] text-[#4AB0F0]" />
+                </span>
+              </div>
+              <div>
+                <h4 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">Highest Rated Dental Clinic</h4>
+                <p className="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">180+ Verified 5-star Google Reviews</p>
               </div>
             </div>
           </div>
