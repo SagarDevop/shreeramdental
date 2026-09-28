@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Sparkles, Menu, X, ArrowUpRight, Phone, Clock } from 'lucide-react';
+import { Sparkles, ArrowUpRight, Phone, Clock } from 'lucide-react';
 
 export default function Header({ onOpenBooking }) {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -85,47 +85,17 @@ export default function Header({ onOpenBooking }) {
           </button>
         </div>
 
-        {/* Mobile Hamburger Button */}
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-xl text-gray-300 hover:text-white hover:bg-[#0B4A41] transition-colors"
-          aria-label="Toggle menu"
+        {/* Mobile Quick Action (Direct Call Button) */}
+        <a
+          href="tel:+919729437758"
+          className="md:hidden flex items-center gap-1.5 bg-[#00BFA6]/15 hover:bg-[#00BFA6]/25 text-[#00BFA6] px-3 py-1.5 rounded-full text-xs font-semibold border border-[#00BFA6]/30 transition-colors"
+          aria-label="Call clinic"
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+          <Phone className="w-3.5 h-3.5 text-[#00BFA6]" />
+          <span>Call</span>
+        </a>
       </div>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-[#042E28] border-b border-[#0B4A41] px-6 pt-4 pb-6 space-y-3 animate-fadeIn">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              onClick={() => setMobileMenuOpen(false)}
-              className={({ isActive }) =>
-                `block text-base font-medium py-2.5 border-b border-white/5 transition-colors ${
-                  isActive ? 'text-[#00BFA6]' : 'text-gray-200 hover:text-white'
-                }`
-              }
-            >
-              {item.name}
-            </NavLink>
-          ))}
-          <div className="pt-4">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenBooking();
-              }}
-              className="w-full bg-[#00BFA6] text-white font-semibold py-3 rounded-full flex items-center justify-center gap-2 shadow-md"
-            >
-              <span>Book Appointment</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-      )}
     </header>
   );
 }
+

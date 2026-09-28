@@ -13,7 +13,7 @@ export default function MobileBottomNav({ onOpenBooking }) {
   ];
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#042E28]/95 backdrop-blur-lg border-t border-emerald-900/60 px-2 py-1.5 shadow-2xl safe-area-pb">
+    <div className="md:hidden mobile-bottom-nav-fixed bg-[#042E28]/95 backdrop-blur-lg border-t border-emerald-900/60 px-2 py-1.5 shadow-2xl safe-area-pb">
       <div className="flex items-center justify-around relative">
         
         {/* Home & Services */}
